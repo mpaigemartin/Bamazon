@@ -1,14 +1,14 @@
 const express = require("express");
+const path = require('path')
 
 const app = express();
 
 const PORT = 8080;
 
-app.get("/", function(req, res){
-    res.json();
-});
+app.use(express.static(path.join(__dirname, './public')))
 
-
+require('./routes/htmlRoutes')
+require('./routes/apiRoutes')
 
 
 app.listen(PORT, function (){

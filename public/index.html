@@ -7,15 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
-    <script src="public/app.js"></script>
+    <script src="js/app.js"></script>
 </head>
 <body>
     <div class="header">
         <h2>Welcome to </h2>
         <h1>Bamazon</h1>
-    </div>
-    <div class="col">
-        <p>Products</p>
     </div>
     <div id="ex4">
         <img class="cart" src="5a364b6d2c5557.7578312615135076931816 (1).png">
@@ -25,181 +22,28 @@
 </div>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-2">Diablo 3</div>
-            <div class="col-2">Video Games</div>
-            <div class="col-2">$59.99</div>
-            <div class="col-2">5</div>
-            <div class="col-2">
-                <form>
-                    <div class="form-group">
-                        <input type="number" class="form-control" id="quantity" placeholder="Select Quantity">
-                    </div>
-                </form>
-            </div>
-            <div class="col-2">
-                <button type="button" class="btn btn-dark">Add to Cart</button>
-            </div>
+            <div class="col-2">Prodcut Name</div>
+            <div class="col-2">Department Name</div>
+            <div class="col-2">Price</div>
+            <div class="col-2"># in Stock</div>
         </div>
         <div class="row">
-            <div class="col-2">Dragon's Lair</div>
-            <div class="col-2">Video Games</div>
-            <div class="col-2">$449.99</div>
-            <div class="col-2">1</div>
+            <div id="product_name" class="col-2"></div>
+            <div id="department_name" class="col-2"></div>
+            <div id="price" class="col-2"></div>
+            <div id="stock_quantity" class="col-2"></div>
             <div class="col-2">
                 <form>
                     <div class="form-group">
-                        <input type="number" class="form-control" id="quantity" placeholder="Select Quantity">
+                        <input type="text" class="form-control" placeholder="Select Quantity">
                     </div>
                 </form>
             </div>
             <div class="col-2">
-                <button type="button" class="btn btn-dark">Add to Cart</button>
+                <button type="submit" class="btn btn-dark">Add to Cart</button>
             </div>
         </div>
-        <div class="row">
-            <div class="col-2">Fallout 4</div>
-            <div class="col-2">Video Games</div>
-            <div class="col-2">$59.99</div>
-            <div class="col-2">11</div>
-            <div class="col-2">
-                <form>
-                    <div class="form-group">
-                        <input type="number" class="form-control" id="quantity" placeholder="Select Quantity">
-                    </div>
-                </form>
-            </div>
-            <div class="col-2">
-                <button type="button" class="btn btn-dark">Add to Cart</button>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-2">Final Fantasy XV</div>
-            <div class="col-2">Video Games</div>
-            <div class="col-2">$34.99</div>
-            <div class="col-2">218</div>
-            <div class="col-2">
-                <form>
-                    <div class="form-group">
-                        <input type="number" class="form-control" id="quantity" placeholder="Select Quantity">
-                    </div>
-                </form>
-            </div>
-            <div class="col-2">
-                <button type="button" class="btn btn-dark">Add to Cart</button>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-2">Frogger</div>
-            <div class="col-2">Video Games</div>
-            <div class="col-2">$8.99</div>
-            <div class="col-2">25</div>
-            <div class="col-2">
-                <form>
-                    <div class="form-group">
-                        <input type="number" class="form-control" id="quantity" placeholder="Select Quantity">
-                    </div>
-                </form>
-            </div>
-            <div class="col-2">
-                <button type="button" class="btn btn-dark">Add to Cart</button>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-2">Joust</div>
-            <div class="col-2">Video Games</div>
-            <div class="col-2">$2.99</div>
-            <div class="col-2">15</div>
-            <div class="col-2">
-                <form>
-                    <div class="form-group">
-                        <input type="number" class="form-control" id="quantity" placeholder="Select Quantity">
-                    </div>
-                </form>
-            </div>
-            <div class="col-2">
-                <button type="button" class="btn btn-dark">Add to Cart</button>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-2">Killer Instinct</div>
-            <div class="col-2">Video Games</div>
-            <div class="col-2">$29.99</div>
-            <div class="col-2">80</div>
-            <div class="col-2">
-                <form>
-                    <div class="form-group">
-                        <input type="number" class="form-control" id="quantity" placeholder="Select Quantity">
-                    </div>
-                </form>
-            </div>
-            <div class="col-2">
-                <button type="button" class="btn btn-dark">Add to Cart</button>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-2">Portal 2</div>
-            <div class="col-2">Video Games</div>
-            <div class="col-2">$19.99</div>
-            <div class="col-2">9</div>
-            <div class="col-2">
-                <form>
-                    <div class="form-group">
-                        <input type="number" class="form-control" id="quantity" placeholder="Select Quantity">
-                    </div>
-                </form>
-            </div>
-            <div class="col-2">
-                <button type="button" class="btn btn-dark">Add to Cart</button>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-2">Super Burger Time</div>
-            <div class="col-2">Video Games</div>
-            <div class="col-2">$6.99</div>
-            <div class="col-2">18</div>
-            <div class="col-2">
-                <form>
-                    <div class="form-group">
-                        <input type="number" class="form-control" id="quantity" placeholder="Select Quantity">
-                    </div>
-                </form>
-            </div>
-            <div class="col-2">
-                <button type="button" class="btn btn-dark">Add to Cart</button>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-2">Sugar Rush</div>
-            <div class="col-2">Video Games</div>
-            <div class="col-2">$289.99</div>
-            <div class="col-2">2</div>
-            <div class="col-2">
-                <form>
-                    <div class="form-group">
-                        <input type="number" class="form-control" id="quantity" placeholder="Select Quantity">
-                    </div>
-                </form>
-            </div>
-            <div class="col-2">
-                <button type="button" class="btn btn-dark">Add to Cart</button>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-2">World of Warcraft</div>
-            <div class="col-2">Video Games</div>
-            <div class="col-2">$59.99</div>
-            <div class="col-2">60</div>
-            <div class="col-2">
-                <form>
-                    <div class="form-group">
-                        <input type="number" class="form-control" id="quantity" placeholder="Select Quantity">
-                    </div>
-                </form>
-            </div>
-            <div class="col-2">
-                <button type="button" class="btn btn-dark">Add to Cart</button>
-            </div>
-        </div>
+     
     </div>
 
         <div class="modal" tabindex="-1" role="dialog">

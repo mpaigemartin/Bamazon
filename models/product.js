@@ -1,5 +1,5 @@
 module.exports = function(app){
-const product = {
+const Product = {
     product_name: {
         type = Sequelize.STRING
     },
@@ -7,10 +7,11 @@ const product = {
         type = Sequelize.STRING
     },
     price: {
-        type = Sequelize.INTERGER
+        type = Sequelize.DECIMAL(10,2)
     },
     stock_quantity: {
         type = Sequelize.INTERGER
     },
     }
+    return Product;
 }
