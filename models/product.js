@@ -1,5 +1,5 @@
-module.exports = function(app){
-const Product = {
+module.exports = function(connection, Sequelize){
+const Product = connection.define('Product', {
     product_name: {
         type = Sequelize.STRING
     },
@@ -12,6 +12,8 @@ const Product = {
     stock_quantity: {
         type = Sequelize.INTERGER
     },
-    }
-    return Product;
-}
+}   
+)
+
+return Product
+};
