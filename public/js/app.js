@@ -6,10 +6,14 @@ $('#cart').on('shown.bs.modal', function () {
 
 
 const buildItemRow = function(){
-  const render 
+  const render = function(getItems){
+    $('#data').html(items)
+  }
 
   const getItems = function(){
-    $.get("/api/product")
+    $.get("/api/product"),then(function(items){
+      render(items);
+    })
   }
 
   const createButton = function(){
@@ -20,11 +24,12 @@ const buildItemRow = function(){
   }
   
   
-  
-    $('<td>').text(`${product_name}`)
+  const items = function(){
+  $('<td>').text(`${product_name}`)
   $('<td>').text(`${price}`)
   $('<td>').append(item)
   $('<td>').append(button)
+  }
 }
 
 
@@ -44,4 +49,5 @@ const addtoCart = function(){
   
 getItems();
   
-
+$('btn').on("click", addtoCart)
+$('#checkout').on('click', updateStock)
