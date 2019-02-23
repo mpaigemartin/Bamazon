@@ -8,7 +8,9 @@ $('#cart').on('shown.bs.modal', function () {
 const buildItemRow = function(){
   const render 
 
-  const getItems
+  const getItems = function(){
+    $.get("/api/product")
+  }
 
   const createButton = function(){
     var btn = document.createElement("BUTTON");
@@ -26,7 +28,7 @@ const buildItemRow = function(){
 }
 
 
-const updateStock
+const updateStock = function(){}
 
 const addtoCart = function(){
   if (input > stock_quantity){
@@ -40,6 +42,6 @@ const addtoCart = function(){
   // $("#price").append($`${price}`);
   // $("#stock_quantity").append(`${stock_quantity}`);
   
-
+getItems();
   
 
