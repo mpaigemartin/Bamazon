@@ -1,5 +1,6 @@
-module.exports = 
-    Products [
+const db = require('../models')
+
+    const items = [
     {
         product_name: "Diablo 3",
         department_name: "Video Games",
@@ -69,7 +70,7 @@ module.exports =
 ]
 
 db.sequelize.sync({force: true}).then(function(){
-    db.Products.bulkCreate(items)
+    db.Product.bulkCreate(items)
     .then(function(rows){
         console.log("\n\nInserted into database\n\n");
         db.sequelize.close();

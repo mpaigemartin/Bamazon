@@ -1,19 +1,18 @@
-module.exports = function(connection, Sequelize){
-const Product = connection.define('Product', {
+module.exports = function(connection, Sequelize) {
+  const Product = connection.define("Product", {
     product_name: {
-        type: Sequelize.STRING
+      type: Sequelize.STRING
     },
     department_name: {
-        type: Sequelize.STRING
+      type: Sequelize.STRING
     },
     price: {
-        type: Sequelize.DECIMAL(10,2)
+      type: Sequelize.DECIMAL(10, 2)
     },
     stock_quantity: {
-        type: Sequelize.INTEGER
-    },
-}   
-)
+      type: Sequelize.INTEGER
+    }
+  });
 
-return Product
+  return Product;
 };

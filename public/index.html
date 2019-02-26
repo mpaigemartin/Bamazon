@@ -1,66 +1,90 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Bamazon</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
-    <script src="js/app.js"></script>
-</head>
-<body>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="css/style.css"
+    />
+  </head>
+  <body>
     <div class="header">
-        <h2>Welcome to </h2>
-        <h1>Bamazon</h1>
+      <h2>Welcome to</h2>
+      <h1>Bamazon</h1>
     </div>
     <div id="ex4">
-        <img id="cart" class="cart" src="5a364b6d2c5557.7578312615135076931816 (1).png">
-  <span class="p1 fa-stack fa-2x has-badge" data-count="4">
-    <i class="p3 fa fa-shopping-cart fa-stack-1x xfa-inverse" data-count="4b"></i>
-  </span>
-</div>
+      <img
+        id="cart"
+        class="cart"
+        src="5a364b6d2c5557.7578312615135076931816 (1).png"
+      />
+      <span class="p1 fa-stack fa-2x has-badge" data-count="4">
+        <i
+          class="p3 fa fa-shopping-cart fa-stack-1x xfa-inverse"
+          data-count="4b"
+        ></i>
+      </span>
+    </div>
     <div class="container-fluid">
-        <div class="row">
-            <div class="col-2">Prodcut Name</div>
-            <div class="col-2">Department Name</div>
-            <div class="col-2">Price</div>
-            <div class="col-2"># in Stock</div>
+      <div class="tablerow">
+        <div class="col-2">Product Name</div>
+        <div class="col-2">Department Name</div>
+        <div class="col-2">Price</div>
+        <div class="col-2"># in Stock</div>
+      </div>
+      <div class="row">
+        <div id="product_name" class="col-2"></div>
+        <div id="department_name" class="col-2"></div>
+        <div id="price" class="col-2"></div>
+        <div id="stock_quantity" class="col-2"></div>
+        <div class="col-2">
+          
         </div>
-        <div id="data" class="row">
-            <div id="product_name" class="col-2"></div>
-            <div id="department_name" class="col-2"></div>
-            <div id="price" class="col-2"></div>
-            <div id="stock_quantity" class="col-2"></div>
-            <div class="col-2">
-                <form>
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Select Quantity">
-                    </div>
-                </form>
-            </div>
-        </div>
-     
+      </div>
     </div>
 
-        <div id="userCart" class="modal" tabindex="-1" role="dialog">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title">ITEM(S) ADDED!</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <p class="item"></p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
-                    </div>
-                    </div>
-                </div>
-                </div>
-    
-</body>
+    <div id="userCart" class="modal" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">ITEM(S) ADDED!</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p class="item"></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-warning" data-dismiss="modal">
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="js/app.js"></script>
+  </body>
 </html>
